@@ -14,7 +14,7 @@ export default function HomeScreen() {
     { id: '2', icon: require('./assets/spotify.png'), title: 'Spotify', subTile: 'Music', amount: '-$150' },
     { id: '3', icon: require('./assets/moneyTransfer.png'), title: 'Money Transfer ', subTile: 'Transaction', amount: '$1,998' },
     { id: '4', icon: require('./assets/grocery.png'), title: 'Glossary', subTile: 'Shopping', amount: '-$225' },
-    // ... other transactions
+    
   ];
 
   return (

@@ -31,8 +31,9 @@ The Transactions App is a sleek and user-friendly application designed to help u
 - **Usage**: Users can view transaction details at a glance. Each transaction is represented by a custom component that includes an icon, title, subtitle, and amount.
 
 - **Screenshot**:  
-  ![Transactions Screen](./assets/transactions1.jpg)
   ![Transactions Screen](./assets/Transactions(lightMode).jpg)
+  ![Transactions Screen](./assets/Transactions(darkMode).jpg)
+
 
 ### Statistics Screen
 - **Description**: The statistics screen shows statistical data related to the user's transactions. The screen is centered and adapts to the selected theme.

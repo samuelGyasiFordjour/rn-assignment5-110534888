@@ -1,14 +1,22 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import { Appearance } from 'react-native';
 
-const ThemeContext = () => {
+const ThemeContext = createContext();
+
+export const ThemeProvider = ({ children }) => {
+  const [isDarkMode, setIsDarkMode] = useState(Appearance.getColorScheme() === 'dark');
+
+  
+
+  const toggleTheme = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
+
   return (
-    <View>
-      <Text>ThemeContext</Text>
-    </View>
-  )
-}
+    <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
 
-export default ThemeContext
-
-const styles = StyleSheet.create({})
+export const useTheme = () => useContext(ThemeContext);
